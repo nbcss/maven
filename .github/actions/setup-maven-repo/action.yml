@@ -1,0 +1,36 @@
+name: Setup Maven repository
+description: Checkout the Git-backed Maven repository.
+
+inputs:
+  token:
+    description: GitHub token with access to nbcss/maven.
+    required: true
+  path:
+    description: Path to checkout the Maven repository into.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Acquire lock
+      uses: suzuki-shunsuke/lock-action@v0.2.0
+      with:
+        mode: lock
+        repo_owner: nbcss
+        repo_name: nbcss/maven
+        key: contents-lock
+        github_token: ${{ inputs.token }}
+        max_wait_seconds: "1800"
+        wait_interval_seconds: "10"
+        post_unlock: "true"
+        remove_key_when_unlock: "true"
+
+    - name: Checkout Maven repository
+      shell: bash
+      env:
+        MAVEN_REPO_GITHUB_TOKEN: ${{ inputs.token }}
+        MAVEN_REPO_PATH: ${{ inputs.path }}
+      run: |
+        set -euo pipefail
+        repo_url="https://x-access-token:${MAVEN_REPO_GITHUB_TOKEN}@github.com/nbcss/maven.git"
+        git clone --depth=1 --branch contents "$repo_url" "$MAVEN_REPO_PATH"

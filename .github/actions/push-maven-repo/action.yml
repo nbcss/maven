@@ -1,0 +1,38 @@
+name: Push Maven repository
+description: Force-push the Git-backed Maven repository.
+
+inputs:
+  token:
+    description: GitHub token with write access to nbcss/maven.
+    required: true
+  path:
+    description: Path containing the checked-out Maven repository.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Push Maven repository
+      shell: bash
+      working-directory: ${{ inputs.path }}
+      env:
+        MAVEN_REPO_GITHUB_TOKEN: ${{ inputs.token }}
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git remote set-url origin "https://x-access-token:${MAVEN_REPO_GITHUB_TOKEN}@github.com/nbcss/maven.git"
+        git checkout --orphan contents-next
+        git add -A
+        git commit -m "Publish Maven artifacts for $GITHUB_REPOSITORY@$GITHUB_SHA"
+        git push --force-with-lease origin HEAD:contents
+
+    # Lock is released in a post step anyway, here to release it earlier opportunistically.
+    - name: Release lock
+      uses: suzuki-shunsuke/lock-action@v0.2.0
+      with:
+        mode: unlock
+        repo_owner: nbcss
+        repo_name: nbcss/maven
+        key: contents-lock
+        github_token: ${{ inputs.token }}
+        remove_key_when_unlock: "true"
