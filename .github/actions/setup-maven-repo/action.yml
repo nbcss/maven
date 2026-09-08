@@ -17,7 +17,7 @@ runs:
       with:
         mode: lock
         repo_owner: nbcss
-        repo_name: nbcss/maven
+        repo_name: maven
         key: contents-lock
         github_token: ${{ inputs.token }}
         max_wait_seconds: "1800"
