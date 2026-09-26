@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>io.github.nbcss.higherlogisticspatch</groupId>
+  <artifactId>createhigherlogisticspatch</artifactId>
+  <versioning>
+    <lastUpdated>20260925121747</lastUpdated>
+    <snapshot>
+      <timestamp>20260925.121747</timestamp>
+      <buildNumber>3</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.1.0-neoforge-1.21.1-20260925.121747-3</value>
+        <updated>20260925121747</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>0.1.0-neoforge-1.21.1-20260925.121747-3</value>
+        <updated>20260925121747</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1.0-neoforge-1.21.1-20260925.121747-3</value>
+        <updated>20260925121747</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>0.1.0-neoforge-1.21.1-SNAPSHOT</version>
+</metadata>
