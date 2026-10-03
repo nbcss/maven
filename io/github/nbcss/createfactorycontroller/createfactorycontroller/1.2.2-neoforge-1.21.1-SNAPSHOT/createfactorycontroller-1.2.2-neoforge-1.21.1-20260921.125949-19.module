@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nbcss.createfactorycontroller",
+    "module": "createfactorycontroller",
+    "version": "1.2.2-neoforge-1.21.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "url": "createfactorycontroller-1.2.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "size": 2152613,
+          "sha512": "0cfaf12f3a9f1d4a28e2ac5516e8b772ca8c07224e9eb29bcf36c4234e57c418f61463c708025dde43f3f95ec45a13f76a93d1a1b074285b2ea716e5ddf02c4c",
+          "sha256": "f1d748fb44dd36b236e031264a0d86f1e4afab4e8293febe3cf3125ee4b91962",
+          "sha1": "d84a714c3808945b326e22152c4c326e91ae192a",
+          "md5": "3fe3d4c82922c7cea72369ae9f169bf9"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "url": "createfactorycontroller-1.2.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "size": 2152613,
+          "sha512": "0cfaf12f3a9f1d4a28e2ac5516e8b772ca8c07224e9eb29bcf36c4234e57c418f61463c708025dde43f3f95ec45a13f76a93d1a1b074285b2ea716e5ddf02c4c",
+          "sha256": "f1d748fb44dd36b236e031264a0d86f1e4afab4e8293febe3cf3125ee4b91962",
+          "sha1": "d84a714c3808945b326e22152c4c326e91ae192a",
+          "md5": "3fe3d4c82922c7cea72369ae9f169bf9"
+        }
+      ]
+    }
+  ]
+}

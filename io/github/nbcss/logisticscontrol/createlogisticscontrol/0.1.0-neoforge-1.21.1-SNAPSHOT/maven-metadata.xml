@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>io.github.nbcss.logisticscontrol</groupId>
+  <artifactId>createlogisticscontrol</artifactId>
+  <versioning>
+    <lastUpdated>20261003020456</lastUpdated>
+    <snapshot>
+      <timestamp>20261003.020456</timestamp>
+      <buildNumber>5</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.1.0-neoforge-1.21.1-20261003.020456-5</value>
+        <updated>20261003020456</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1.0-neoforge-1.21.1-20261003.020456-5</value>
+        <updated>20261003020456</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>0.1.0-neoforge-1.21.1-20261003.020456-5</value>
+        <updated>20261003020456</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>0.1.0-neoforge-1.21.1-SNAPSHOT</version>
+</metadata>
