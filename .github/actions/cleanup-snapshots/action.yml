@@ -1,0 +1,14 @@
+name: Cleanup snapshots
+description: Delete old Maven snapshot files.
+
+inputs:
+  path:
+    description: Path in a Maven repository to clean up.
+    required: true
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - -f
+    - ${{ inputs.path }}
