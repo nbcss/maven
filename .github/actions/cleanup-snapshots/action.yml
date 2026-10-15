@@ -7,8 +7,5 @@ inputs:
     required: true
 
 runs:
-  using: docker
-  image: Dockerfile
-  args:
-    - -f
-    - ${{ inputs.path }}
+  using: node24
+  main: dist/index.mjs

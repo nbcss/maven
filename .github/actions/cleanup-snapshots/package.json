@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "ncc build index.mjs -o dist"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "fast-xml-parser": "^5.2.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
+  }
+}
