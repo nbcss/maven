@@ -10735,7 +10735,10 @@ class XMLParser {
   const rootDir = core.getInput('path', { required: true });
   const dryRun = core.getInput('dry-run');
   await promises_namespaceObject.stat(rootDir);
-  const parser = new XMLParser({ parseTagValue: false, trimValues: true });
+  const parser = new XMLParser({
+    parseTagValue: false, trimValues: true,
+    isArray: (tag) => ['snapshotVersion'].includes(tag),
+  });
 
   for await (const metadataPath of promises_namespaceObject.glob('**/maven-metadata.xml', { cwd: rootDir, followSymlinks: true })) {
     // Parse Maven metadata XML of snapshot versions.
@@ -10745,19 +10748,20 @@ class XMLParser {
     const version = metadata?.version;
     if (!version?.endsWith('-SNAPSHOT')) continue;
 
-    const timestamp = metadata.versioning?.snapshot?.timestamp;
-    const buildNumber = metadata.versioning?.snapshot?.buildNumber;
     const artifactId = metadata.artifactId;
-    if (!timestamp || !buildNumber || !artifactId) continue;
+    const snapshotVersions = metadata.versioning?.snapshotVersions?.snapshotVersion;
+    if (!artifactId || !snapshotVersions) continue;
 
-    const versionPrefix = version.slice(0, -'-SNAPSHOT'.length);
+    const allowedFileNames = snapshotVersions.map(sv =>
+      `${artifactId}-${sv.value}${sv.classifier?.replace('', '-') || ''}${sv.extension?.replace('', '.') || ''}`
+    );
 
-    // Delete files that matches artifact name and version, but not the current snapshot.
+    // Delete files that matches artifact name, but is not listed in snapshotVersions.
     const directory = external_node_path_namespaceObject.dirname(metadataFile);
     for (const entry of await promises_namespaceObject.readdir(directory)) {
       if (
-        entry.startsWith(`${artifactId}-${versionPrefix}-`) &&
-        !entry.startsWith(`${artifactId}-${versionPrefix}-${timestamp}-${buildNumber}.`)
+        entry.startsWith(`${artifactId}-`) &&
+        !allowedFileNames.some(allowed => entry == allowed || entry.startsWith(allowed + '.'))
       ) {
         const file = external_node_path_namespaceObject.join(directory, entry);
         core.info(file);

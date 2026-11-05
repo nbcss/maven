@@ -9,7 +9,10 @@ import { XMLParser } from 'fast-xml-parser';
   const rootDir = core.getInput('path', { required: true });
   const dryRun = core.getInput('dry-run');
   await fs.stat(rootDir);
-  const parser = new XMLParser({ parseTagValue: false, trimValues: true });
+  const parser = new XMLParser({
+    parseTagValue: false, trimValues: true,
+    isArray: (tag) => ['snapshotVersion'].includes(tag),
+  });
 
   for await (const metadataPath of fs.glob('**/maven-metadata.xml', { cwd: rootDir, followSymlinks: true })) {
     // Parse Maven metadata XML of snapshot versions.
@@ -19,19 +22,20 @@ import { XMLParser } from 'fast-xml-parser';
     const version = metadata?.version;
     if (!version?.endsWith('-SNAPSHOT')) continue;
 
-    const timestamp = metadata.versioning?.snapshot?.timestamp;
-    const buildNumber = metadata.versioning?.snapshot?.buildNumber;
     const artifactId = metadata.artifactId;
-    if (!timestamp || !buildNumber || !artifactId) continue;
+    const snapshotVersions = metadata.versioning?.snapshotVersions?.snapshotVersion;
+    if (!artifactId || !snapshotVersions) continue;
 
-    const versionPrefix = version.slice(0, -'-SNAPSHOT'.length);
+    const allowedFileNames = snapshotVersions.map(sv =>
+      `${artifactId}-${sv.value}${sv.classifier?.replace('', '-') || ''}${sv.extension?.replace('', '.') || ''}`
+    );
 
-    // Delete files that matches artifact name and version, but not the current snapshot.
+    // Delete files that matches artifact name, but is not listed in snapshotVersions.
     const directory = path.dirname(metadataFile);
     for (const entry of await fs.readdir(directory)) {
       if (
-        entry.startsWith(`${artifactId}-${versionPrefix}-`) &&
-        !entry.startsWith(`${artifactId}-${versionPrefix}-${timestamp}-${buildNumber}.`)
+        entry.startsWith(`${artifactId}-`) &&
+        !allowedFileNames.some(allowed => entry == allowed || entry.startsWith(allowed + '.'))
       ) {
         const file = path.join(directory, entry);
         core.info(file);
