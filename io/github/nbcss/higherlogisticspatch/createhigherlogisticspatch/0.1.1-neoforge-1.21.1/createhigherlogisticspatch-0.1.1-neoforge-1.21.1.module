@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nbcss.higherlogisticspatch",
+    "module": "createhigherlogisticspatch",
+    "version": "0.1.1-neoforge-1.21.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "createhigherlogisticspatch-0.1.1-neoforge-1.21.1.jar",
+          "url": "createhigherlogisticspatch-0.1.1-neoforge-1.21.1.jar",
+          "size": 17399,
+          "sha512": "95b90be5809fc918a0939d0d8cd29593fdf61c843808d5239a0144b519bf4e9eac3a198bf18ef3f7f06551c46c5a829bfcb04c066d9d747d2a3631a28518171e",
+          "sha256": "a5a93b85ed71d0975dd23e0e3f7596421e6487f19124764d9a8b3a5dc2665351",
+          "sha1": "e04f1e5e0b4302cb54ccce6f628fc96f6a1a010a",
+          "md5": "4c78940cf958897837e3ad61a4320c65"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createhigherlogisticspatch-0.1.1-neoforge-1.21.1.jar",
+          "url": "createhigherlogisticspatch-0.1.1-neoforge-1.21.1.jar",
+          "size": 17399,
+          "sha512": "95b90be5809fc918a0939d0d8cd29593fdf61c843808d5239a0144b519bf4e9eac3a198bf18ef3f7f06551c46c5a829bfcb04c066d9d747d2a3631a28518171e",
+          "sha256": "a5a93b85ed71d0975dd23e0e3f7596421e6487f19124764d9a8b3a5dc2665351",
+          "sha1": "e04f1e5e0b4302cb54ccce6f628fc96f6a1a010a",
+          "md5": "4c78940cf958897837e3ad61a4320c65"
+        }
+      ]
+    }
+  ]
+}
