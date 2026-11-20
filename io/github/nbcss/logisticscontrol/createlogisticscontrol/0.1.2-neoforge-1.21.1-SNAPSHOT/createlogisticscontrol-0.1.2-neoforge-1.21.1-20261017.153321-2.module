@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nbcss.logisticscontrol",
+    "module": "createlogisticscontrol",
+    "version": "0.1.2-neoforge-1.21.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "createlogisticscontrol-0.1.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "url": "createlogisticscontrol-0.1.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "size": 114484,
+          "sha512": "1c97b147ff7ef1dc76a07897e78fcaab73c029b9cbbf6092334ba8ebdb50e7430d83b2254341e0cd5c7e66ab9f192d6d4b648d83f52a17ead1a0b67563bfbfc9",
+          "sha256": "34f4a322c4b2e6570c60fc08422d6ca87f3dd2ff138a2e63e7bb00959093a30c",
+          "sha1": "2927ad4987ad4fd1168a1c751b5e5994e49715a7",
+          "md5": "eb2504c73b2d4afc1375aa3e4bb73951"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createlogisticscontrol-0.1.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "url": "createlogisticscontrol-0.1.2-neoforge-1.21.1-SNAPSHOT.jar",
+          "size": 114484,
+          "sha512": "1c97b147ff7ef1dc76a07897e78fcaab73c029b9cbbf6092334ba8ebdb50e7430d83b2254341e0cd5c7e66ab9f192d6d4b648d83f52a17ead1a0b67563bfbfc9",
+          "sha256": "34f4a322c4b2e6570c60fc08422d6ca87f3dd2ff138a2e63e7bb00959093a30c",
+          "sha1": "2927ad4987ad4fd1168a1c751b5e5994e49715a7",
+          "md5": "eb2504c73b2d4afc1375aa3e4bb73951"
+        }
+      ]
+    }
+  ]
+}
