@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>io.github.nbcss.createfactorycontroller</groupId>
+  <artifactId>createfactorycontroller</artifactId>
+  <versioning>
+    <lastUpdated>20261127170748</lastUpdated>
+    <snapshot>
+      <timestamp>20261127.170748</timestamp>
+      <buildNumber>21</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.3.0-neoforge-1.21.1-20261127.170748-21</value>
+        <updated>20261127170748</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.3.0-neoforge-1.21.1-20261127.170748-21</value>
+        <updated>20261127170748</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>1.3.0-neoforge-1.21.1-20261127.170748-21</value>
+        <updated>20261127170748</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>1.3.0-neoforge-1.21.1-20261127.170748-21</value>
+        <updated>20261127170748</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>1.3.0-neoforge-1.21.1-SNAPSHOT</version>
+</metadata>

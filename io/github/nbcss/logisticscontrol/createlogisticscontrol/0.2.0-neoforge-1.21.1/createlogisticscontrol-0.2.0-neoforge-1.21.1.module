@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nbcss.logisticscontrol",
+    "module": "createlogisticscontrol",
+    "version": "0.2.0-neoforge-1.21.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "createlogisticscontrol-0.2.0-neoforge-1.21.1.jar",
+          "url": "createlogisticscontrol-0.2.0-neoforge-1.21.1.jar",
+          "size": 164150,
+          "sha512": "f78fa443d4d53819bfcddf45b47892b29a31a67c0727df1cad27b28731eab3821fe17aa3d2dc0f0f78122ba87d9876ce7dbcfd9cc8bdbcf8dda4069b2f22f4d3",
+          "sha256": "df6c4bc82b65ebf4ee5518381fcc2ca70389e33b8da437dced846da0fd26232a",
+          "sha1": "8bed585ef3aa287e30648fd9a0204289443e86d4",
+          "md5": "0391f525665a7ed79458fa2d12463a62"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createlogisticscontrol-0.2.0-neoforge-1.21.1.jar",
+          "url": "createlogisticscontrol-0.2.0-neoforge-1.21.1.jar",
+          "size": 164150,
+          "sha512": "f78fa443d4d53819bfcddf45b47892b29a31a67c0727df1cad27b28731eab3821fe17aa3d2dc0f0f78122ba87d9876ce7dbcfd9cc8bdbcf8dda4069b2f22f4d3",
+          "sha256": "df6c4bc82b65ebf4ee5518381fcc2ca70389e33b8da437dced846da0fd26232a",
+          "sha1": "8bed585ef3aa287e30648fd9a0204289443e86d4",
+          "md5": "0391f525665a7ed79458fa2d12463a62"
+        }
+      ]
+    }
+  ]
+}

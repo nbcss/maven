@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nbcss.createfactorycontroller",
+    "module": "createfactorycontroller",
+    "version": "1.2.2-neoforge-1.21.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.2-neoforge-1.21.1.jar",
+          "url": "createfactorycontroller-1.2.2-neoforge-1.21.1.jar",
+          "size": 2233099,
+          "sha512": "f0c49d805362fc311a4117bcac6ded0489726799e29cceb161e1e9f5c3aae14a2fae16f0df1320f361177db3c39fb3b57b1a32be9b7c4f5639a1f26ef5c07d90",
+          "sha256": "8a1cf1dab80584c6330b3eefece51b5d0390bbea59ea520280a33b119f1de4bc",
+          "sha1": "74bc17bbef3b3d65c9e36a8a0ad967656e4a65ab",
+          "md5": "6463adc99db0466fc30c364b8ee5f2ce"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.2-neoforge-1.21.1.jar",
+          "url": "createfactorycontroller-1.2.2-neoforge-1.21.1.jar",
+          "size": 2233099,
+          "sha512": "f0c49d805362fc311a4117bcac6ded0489726799e29cceb161e1e9f5c3aae14a2fae16f0df1320f361177db3c39fb3b57b1a32be9b7c4f5639a1f26ef5c07d90",
+          "sha256": "8a1cf1dab80584c6330b3eefece51b5d0390bbea59ea520280a33b119f1de4bc",
+          "sha1": "74bc17bbef3b3d65c9e36a8a0ad967656e4a65ab",
+          "md5": "6463adc99db0466fc30c364b8ee5f2ce"
+        }
+      ]
+    }
+  ]
+}

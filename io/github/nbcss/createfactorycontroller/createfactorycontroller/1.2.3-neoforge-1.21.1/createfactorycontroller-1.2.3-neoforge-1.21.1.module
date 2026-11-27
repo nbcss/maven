@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nbcss.createfactorycontroller",
+    "module": "createfactorycontroller",
+    "version": "1.2.3-neoforge-1.21.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.3-neoforge-1.21.1.jar",
+          "url": "createfactorycontroller-1.2.3-neoforge-1.21.1.jar",
+          "size": 2235668,
+          "sha512": "bc3e718187819742bd0058ddd24d493fe691bf08bae8a0dc31ed56ae44ae8d00fa2fc6ea9ed2e9fa5c26d762027e595c9bfab55acbb759d56c9a00e9a1977a7e",
+          "sha256": "d049fb9b3ce3a776135c960a1ddb06535bfdcea0a8e821f554cd1d6892ef8371",
+          "sha1": "53c1b253535c93db6a060c96e10f9e210a8340d7",
+          "md5": "5b3ad129f161900386a233b63d47ab7d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.3-neoforge-1.21.1.jar",
+          "url": "createfactorycontroller-1.2.3-neoforge-1.21.1.jar",
+          "size": 2235668,
+          "sha512": "bc3e718187819742bd0058ddd24d493fe691bf08bae8a0dc31ed56ae44ae8d00fa2fc6ea9ed2e9fa5c26d762027e595c9bfab55acbb759d56c9a00e9a1977a7e",
+          "sha256": "d049fb9b3ce3a776135c960a1ddb06535bfdcea0a8e821f554cd1d6892ef8371",
+          "sha1": "53c1b253535c93db6a060c96e10f9e210a8340d7",
+          "md5": "5b3ad129f161900386a233b63d47ab7d"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nbcss.createfactorycontroller",
+    "module": "createfactorycontroller",
+    "version": "1.2.4-neoforge-1.21.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.2.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.4-neoforge-1.21.1.jar",
+          "url": "createfactorycontroller-1.2.4-neoforge-1.21.1.jar",
+          "size": 2289542,
+          "sha512": "c16c1234a184da51d8d9d04ad27457e40fc9df14a21e08436c6c117c47f4d2dab4fe51c046419f8e3c635e4acc6e910d3290556d3cc3a6863bdf202512894ce6",
+          "sha256": "747fee32b9a886c3bf41b5f17887fd191af5e4906b728a810e664087f593dae7",
+          "sha1": "e81fddc52008f72734d09c3eabc96018978d1a79",
+          "md5": "93d6586ea0bee32dbe43d0d15d8bf126"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.4-neoforge-1.21.1.jar",
+          "url": "createfactorycontroller-1.2.4-neoforge-1.21.1.jar",
+          "size": 2289542,
+          "sha512": "c16c1234a184da51d8d9d04ad27457e40fc9df14a21e08436c6c117c47f4d2dab4fe51c046419f8e3c635e4acc6e910d3290556d3cc3a6863bdf202512894ce6",
+          "sha256": "747fee32b9a886c3bf41b5f17887fd191af5e4906b728a810e664087f593dae7",
+          "sha1": "e81fddc52008f72734d09c3eabc96018978d1a79",
+          "md5": "93d6586ea0bee32dbe43d0d15d8bf126"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "createfactorycontroller-1.2.4-neoforge-1.21.1-sources.jar",
+          "url": "createfactorycontroller-1.2.4-neoforge-1.21.1-sources.jar",
+          "size": 1579845,
+          "sha512": "343d70e76f9b7d11e56297f2f21bc9a41cc3b9ffc9219fb102d6e288398ab3a64f3fd6c045676d33b55ec988cbc3a4bfd9d35f93b7d7e6acb582c64ac714f55b",
+          "sha256": "2670433a28ecc28751be128a104f3068ab88416efb97c54033240e3f1b7e4e77",
+          "sha1": "a4ef1bfa524b8aaea29cc3581cbae1da744df6a2",
+          "md5": "24c966c2904207d3e6cd476b45358fc6"
+        }
+      ]
+    }
+  ]
+}
